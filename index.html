@@ -4,21 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Box Model</title>
+    <title>Flex</title>
     <style>
         body {
-            background-image: linear-gradient(pink, yellow);
+            background-image: url(https://images.unsplash.com/photo-1521193089946-7aa29d1fe776?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80);
+            background-position: center;
             background-size: cover;
-            background-attachment: fixed;
             font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         }  
-        div {
-            background-color:antiquewhite;
-            width:300px;
-            height:200px;
-            border:10px solid red;
-            padding: 50px;
-            margin: 20px;
+        .flex-container {
+            background-color: blue;
+            display: flex;
+            justify-content: space-around;
+        }
+        .flex-container > img {
+            margin: 10px;
+            border-radius: 10px;
         }
     </style>
 </head>
@@ -26,11 +27,17 @@
     <h3>Name - Sandhya Kumari</h3>
     <h3>Roll No. - 2006126</h3>
     <hr>
-    <h1>The CSS Box Model</h1>
-    <p>In CSS, the term "box model" is used when talking about design and layout.<br>
-        The CSS box model is essentially a box that wraps around every HTML element. It consists of: margins, borders, padding, and the actual content.</p>
+    <h1>Flex With Images</h1>
+    <p>The Flexible Box Layout Module, makes it easier to design flexible responsive layout structure without using float or positioning. <br> <br>
+        Here we have a div with display property set to "flex" using a "flex-container" class. There are four images inside our flex-container
+        which are equally spaced by setting the justify-content property to "space-around".</p>
 
-    <div>This text is the content of the box. The content of this box has a widhth and height of 300px and 200px respectively. It has a 50px padding, 20px margin and a 20px red border.</div>
+    <div class="flex-container">
+        <img src="https://source.unsplash.com/300x300/?cars" alt="image 1">
+        <img src="https://source.unsplash.com/300x300/?nature" alt="image 2">
+        <img src="https://source.unsplash.com/300x300/?road" alt="image 3">
+        <img src="https://source.unsplash.com/300x300/?travel" alt="image 4">
+    </div>
     <hr>
     <a href="#"><button>View Code</button></a>
 </body>
